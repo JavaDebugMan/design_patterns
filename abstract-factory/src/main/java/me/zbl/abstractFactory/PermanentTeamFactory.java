@@ -25,18 +25,19 @@ package me.zbl.abstractFactory;
 
 /**
  * 久经考验的团队
+ * 具体工厂
  */
 public class PermanentTeamFactory implements TeamFactory {
 
-  public Ship createShip() {
-    return new OldShip();
-  }
+    public Ship createShip() {
+        return new OldShip();
+    }
 
-  public Captain createCaptain() {
-    return new OldCaptain();
-  }
+    public Captain createCaptain() {
+        return new OldCaptain();
+    }
 
-  public Sailor createSailor() {
-    return new OldSailor();
-  }
+    public Sailor createSailor() {
+        return new OldSailor();
+    }
 }

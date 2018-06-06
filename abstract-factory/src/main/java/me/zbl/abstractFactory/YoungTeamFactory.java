@@ -25,18 +25,24 @@ package me.zbl.abstractFactory;
 
 /**
  * 年轻团队工厂
+ * 具体工厂
  */
 public class YoungTeamFactory implements TeamFactory {
 
-  public Ship createShip() {
-    return new NewShip();
-  }
+    public Ship createShip() {
+        return new NewShip();
+    }
 
-  public Captain createCaptain() {
-    return new YoungCaptain();
-  }
+    public Captain createCaptain() {
+        return new YoungCaptain();
+    }
 
-  public Sailor createSailor() {
-    return new YoungSailor();
-  }
+    public Sailor createSailor() {
+        return new YoungSailor();
+    }
+
+    static YoungTeamFactory createYoungTeamFactory() {
+        return new YoungTeamFactory();
+    }
+
 }

@@ -25,12 +25,14 @@ package me.zbl.abstractFactory;
 
 /**
  * 团队工厂要实现的功能
+ * 抽象工厂
+ * 工厂的工厂
  */
 public interface TeamFactory {
 
-  Ship createShip();
+    Ship createShip();
 
-  Captain createCaptain();
+    Captain createCaptain();
 
-  Sailor createSailor();
+    Sailor createSailor();
 }
