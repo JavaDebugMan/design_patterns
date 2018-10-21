@@ -34,11 +34,11 @@ public class Application {
   private static final Logger LOGGER = LoggerFactory.getLogger(Application.class);
 
   public static void main(String[] args) {
-    LOGGER.info("仅由木匠制作锤把");
+    //LOGGER.info("仅由木匠制作锤把");
     Operation carpenter = new CarpenterOperation();
-    carpenter.checkBefore();
+    /*carpenter.checkBefore();
     carpenter.join();
-    carpenter.chekcAfter();
+    carpenter.chekcAfter();*/
 
     LOGGER.info("由铁匠完成锤把以及锤头的制作");
     Operation hammerSmith = new HammerSmithOperation(carpenter);
